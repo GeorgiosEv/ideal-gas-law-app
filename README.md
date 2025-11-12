@@ -1,4 +1,4 @@
-# ⚛️ ideal_gas_law 👨🏻‍🔬
+# ⚛️ ideal_gas_law_app 👨🏻‍🔬
 The [ideal gas law](https://www.britannica.com/science/ideal-gas-law) is an equation of state that describes the relation between Pressure (P), Volume (V) and temperature (T) of an ideal gas in the limit of low pressure and high temperature.
 
 According to the definition of the *ideal gas law* (check link above), which is derived from the kinetic theory of gas, there are a few assumptions regarding the nature and size of the molecules and the interactions between them:
