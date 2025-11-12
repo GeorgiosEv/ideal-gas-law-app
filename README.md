@@ -38,7 +38,7 @@ A screenshot of a test run (attempting to calculate the Pressure (P), in V1) can
 
 <img width="316" height="217" alt="Test Run Python-based Ideal Gas Law" src="https://github.com/user-attachments/assets/beefce29-ad31-40e8-96ac-2b61194e5f22" />
 
-The 1st part is located here: [ideal_gas_law_python_based]()
+The 1st part is located here: [ideal_gas_law_part_1]()
 
 ## PART 2️⃣: Python-based GUI (Created in QT Designer)
 For the 2nd part of this project, I utilised the functionality of the Python script from part 1 of this project, incorporating it into a Python-based GUI (created in [QT Designer](https://doc.qt.io/qt-6/gettingstarted.html)).
