@@ -1,0 +1,7 @@
+# Force .py files to be counted as Python
+*.py linguist-language=python
+*.py linguist-detectable=true
+
+# Force .vi files to be counted as LabVIEW
+*.vi linguist-language=labview
+*.vi linguist-detectable=true
