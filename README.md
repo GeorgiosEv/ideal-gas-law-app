@@ -42,7 +42,7 @@ The 1st part is located here: [ideal_gas_law_part_1](ideal_gas_law_part_1)
 
 ## PART 2️⃣: Python-based GUI (Created in QT Designer)
 For the 2nd part of this project, I utilised the functionality of the Python script from part 1 of this project, incorporating it into a Python-based GUI (created in [QT Designer](https://doc.qt.io/qt-6/gettingstarted.html)).
-- The GUI allows user to input 2 out of 3 main quantities (P, V, T), in addition to definining the number of moles (n) (in V1) or the number of molecules (N) (in V2).
+- The GUI allows user to input 2 out of 3 main quantities (P, V, T), in addition to definining the number of moles (n) (in this case and for simplicity, we have only utilised V1 from Part 1).
 - An simple error-handling system has also been implemented to ensure no invalid input is accepted and optimise functionality.
 - The result will then be displayed at the bottom of the window (including the appropriate physical units).
 
@@ -52,6 +52,10 @@ A screenshot of a test run (attempting to calculate the Pressure (P)) can be see
 
 [ADD IMAGE]
 
-## PART 3️⃣: LabVIEW-based GUI
+## PART 3️⃣: LabVIEW GUI
+For the 3rd part of this project, I created a UI-based calculator in LabVIEW from scratch. Due to my past work with LabVIEW, it was easy for me to identify the components that were required and built the system.
+- The calculator interface contains a combination of LabVIEW elements (e.g. radio buttons, case structures) that allow the smooth execution of the calculations and the appropriate error handling (e.g. division with zero, case selection and allowed input quantities).
+- The GUI allows user to input 2 out of 3 main quantities (P, V, T), in addition to definining the number of moles (n), through the INPUT CONTROL panel.
+- The result will then be displayed in the OUTPUT panel (using both visual and numerical means, and including the appropriate physical units).
 
 [ADD DESCRIPTION & IMAGE]
