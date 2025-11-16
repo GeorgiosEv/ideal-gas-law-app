@@ -58,4 +58,9 @@ For the 3rd part of this project, I created a UI-based calculator in LabVIEW fro
 - The GUI allows user to input 2 out of 3 main quantities (P, V, T), in addition to definining the number of moles (n), through the INPUT CONTROL panel.
 - The result will then be displayed in the OUTPUT panel (using both visual and numerical means, and including the appropriate physical units).
 
-[ADD DESCRIPTION & IMAGE]
+A screenshot of a test run (attempting to calculate the Pressure (P)) can be seen below:
+
+⬇️
+
+<img width="600" height="443" alt="Test Run LabView-based Ideal Gas Law" src="https://github.com/user-attachments/assets/9b5c407b-f688-4bed-97b7-c461bb373a12" />
+
