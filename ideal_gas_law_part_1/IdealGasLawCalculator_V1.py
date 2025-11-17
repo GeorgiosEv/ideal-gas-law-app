@@ -29,23 +29,23 @@ def get_positive_float(prompt, allow_zero=False):
 ### ------- CALCULATION FUNCTIONS ------- ###
 # 1: Calculate Pressure (P)
 def Pressure(n,V,T):
-    if V <= 0 or n <= 0 or T < 0:
+    if n < 0 or V < 0 or T <= 0:
         raise ValueError(
         "Invalid input: \n"
-            "- Volume (V) must be greater than zero. \n" 
-            "- Number of moles (n) must be equal to or greater than zero. \n"
+            "- Number of moles (n) must be greater than zero. \n"
+            "- Volume (V) must be greater than zero. \n"
             "- Temperature (T) must be equal to or greater than zero. \n"
             ) 
     return (n * R * T) / V
 
 # 2: Calculate Volume (V)
 def Volume(n,P,T):
-    if P <= 0 or n <= 0 or T <= 0:
+    if n < 0 or P < 0 or T <= 0:
         raise ValueError(
         "Invalid input: \n"
-            "- Pressure (P) must be greater than zero. \n" 
-            "- Number of moles (n) must be equal or greater than zero. \n"
-            "- Temperature (T) must be equal or greater than zero. \n"
+            "- Number of moles (n) must be greater than zero. \n"
+            "- Pressure (P) must be greater than zero. \n"
+            "- Temperature (T) must equal to or greater than zero. \n"
             )
     return (n * R * T) / P
 
