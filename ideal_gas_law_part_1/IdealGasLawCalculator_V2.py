@@ -29,23 +29,23 @@ def get_positive_float(prompt, allow_zero=False):
 ### ------- CALCULATION FUNCTIONS ------- ###
 # 1: Calculate Pressure (P)
 def Pressure(N,V,T):
-    if V <= 0 or N <= 0 or T < 0:
+    if N < 0 or V < 0 or T <= 0:
         raise ValueError(
         "Invalid input: \n"
-            "- Volume (V) must be greater than zero. \n" 
-            "- Number of molecules (N) must be equal to or greater than zero. \n"
+            "- Number of molecules (N) must be greater than zero. \n"
+            "- Volume (V) must be greater than zero. \n"
             "- Temperature (T) must be equal to or greater than zero. \n"
             ) 
     return (N * k * T) / V
 
 # 2: Calculate Volume (V)
 def Volume(N,P,T):
-    if P <= 0 or N <= 0 or T <= 0:
+    if N < 0 or P < 0 or T <= 0:
         raise ValueError(
         "Invalid input: \n"
-            "- Pressure (P) must be greater than zero. \n" 
-            "- Number of molecules (N) must be equal or greater than zero. \n"
-            "- Temperature (T) must be equal or greater than zero. \n"
+            "- Number of molecules (N) must be greater than zero. \n"
+            "- Pressure (P) must be greater than zero. \n"
+            "- Temperature (T) must equal to or greater than zero. \n"
             )
     return (N * k * T) / P
 
@@ -54,7 +54,7 @@ def Temperature(N,P,V):
     if N < 0 or P <= 0 or V <= 0:
         raise ValueError(
         "Invalid input: \n"
-            "- Number of molecules (N) greater than zero. \n" 
+            "- Number of molecules (N) must be greater than zero. \n" 
             "- Pressure (P) must be equal or greater than zero. \n"
             "- Volume (V) must be equal or greater than zero. \n"
             )
@@ -79,7 +79,7 @@ def main():
         match options:
             case "1": # Select this case to calculate Pressure (P)
                 print("\n--- Calculation of Pressure (P) ---")
-                N = get_positive_float("\nEnter the number of molecules (N): ") * 10**(23)
+                N = get_positive_float("\nEnter the number of molecules (N) (* 10**(23)): ") * 10**(23)
                 V = get_positive_float("Enter Volume (V) of the container (m³): ")
                 T = get_positive_float("Enter Temperature (T) of the container (K): ", allow_zero=True)
                 try:
@@ -89,7 +89,7 @@ def main():
                     print(f"\n {e} \n")
             case "2": # Select this case to calculate Volume (V)
                 print("\n--- Calculation of Volume (V) ---")
-                N = get_positive_float("\nEnter the number of molecules (N): ") * 10**(23)
+                N = get_positive_float("\nEnter the number of molecules (N) (* 10**(23)): ") * 10**(23)
                 V = get_positive_float("Enter Pressure (P) of the container (m³): ")
                 T = get_positive_float("Enter Temperature (T) of the container (K): ", allow_zero=True)
                 try:
@@ -99,7 +99,7 @@ def main():
                     print(f"\n {e} \n")
             case "3": # Select this case to calculate Temperature (T)
                 print("\n--- Calculation of Temperature (T) ---")
-                N = get_positive_float("\nEnter the number of molecules (N): ") * 10**(23)
+                N = get_positive_float("\nEnter the number of molecules (N) (* 10**(23)): ") * 10**(23)
                 V = get_positive_float("Enter Pressure (P) of the container (Pa): ")
                 T = get_positive_float("Enter Volume (V) of the container (m³): ", allow_zero=True)
                 try:
