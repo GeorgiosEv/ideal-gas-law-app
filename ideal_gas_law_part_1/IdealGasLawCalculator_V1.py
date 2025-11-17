@@ -54,7 +54,7 @@ def Temperature(n,P,V):
     if n < 0 or P <= 0 or V <= 0:
         raise ValueError(
         "Invalid input: \n"
-            "- Number of moles (n) greater than zero. \n" 
+            "- Number of moles (n) must be greater than zero. \n" 
             "- Pressure (P) must be equal or greater than zero. \n"
             "- Volume (V) must be equal or greater than zero. \n"
             )
