@@ -50,7 +50,9 @@ A screenshot of a test run (attempting to calculate the Pressure (P)) can be see
 
 ⬇️
 
-[ADD IMAGE]
+<img width="345" height="381" alt="Test Run Qt-based Ideal Gas Law" src="https://github.com/user-attachments/assets/cfd7d423-0e3e-4f0c-8d3f-bdb47fe3e37d" />
+
+The 2nd part is located here: [ideal_gas_law_part_2](ideal_gas_law_part_2)
 
 ## PART 3️⃣: LabVIEW GUI
 For the 3rd part of this project, I created a UI-based calculator in LabVIEW from scratch. Due to my past work with LabVIEW, it was easy for me to identify the components that were required and built the system.
@@ -64,3 +66,4 @@ A screenshot of a test run (attempting to calculate the Pressure (P)) can be see
 
 <img width="600" height="443" alt="Test Run LabView-based Ideal Gas Law" src="https://github.com/user-attachments/assets/9b5c407b-f688-4bed-97b7-c461bb373a12" />
 
+The 3rd part is located here: [ideal_gas_law_part_3](ideal_gas_law_part_3)
