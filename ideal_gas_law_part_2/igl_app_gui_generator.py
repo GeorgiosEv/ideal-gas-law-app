@@ -26,10 +26,10 @@ class Ui_igl_app_gui(object):
         igl_app_gui.setMaximumSize(QtCore.QSize(350, 345))
         self.centralwidget = QtWidgets.QWidget(igl_app_gui)
         self.centralwidget.setObjectName("centralwidget")
-        
-        # Title & Formula
         self.mainLayout = QtWidgets.QVBoxLayout(self.centralwidget)
         self.mainLayout.setObjectName("mainLayout")
+
+        # Title & Formula
         self.titleLayout = QtWidgets.QVBoxLayout()
         self.titleLayout.setObjectName("titleLayout")
         self.title_label = QtWidgets.QLabel(self.centralwidget)
